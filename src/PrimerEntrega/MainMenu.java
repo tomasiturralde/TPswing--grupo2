@@ -20,7 +20,6 @@ public class MainMenu extends JFrame {
 
         //Agregar imagen
         JPanel panel = new JPanel();
-        panel.add(new Label("/Users/DiegoMancini/Downloads/Fifa18.png"));
         setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
 
         //Titulo del trabajo
