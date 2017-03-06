@@ -78,3 +78,13 @@ fabric.properties
 hs_err_pid*
 
 # End of https://www.gitignore.io/api/java,intellij
+!/.idea/workspace.xml
+.idea/TPswing--grupo2.iml
+.idea/misc.xml
+.idea/modules.xml
+!/.idea/TPswing--grupo2.iml
+!/.idea/misc.xml
+!/.idea/modules.xml
+/.idea/
+/TPswing--grupo2.iml
+/.gitignore
