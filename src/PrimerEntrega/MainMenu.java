@@ -14,7 +14,6 @@ public class MainMenu extends JFrame {
         setTitle("Main Menu");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-        pack();
         setResizable(false);
         setSize(572, 720);
 
@@ -57,6 +56,7 @@ public class MainMenu extends JFrame {
 
         add(panel);
 
+        pack();
         setVisible(true);
     }
 }
