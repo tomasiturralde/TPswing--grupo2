@@ -19,7 +19,7 @@ public class MainMenu extends JFrame {
 
         //Agregar imagen
         JPanel panel = new JPanel();
-        setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
+        panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
 
         //Titulo del trabajo
         JLabel title = new JLabel("Trabajo Practico Swing");
@@ -52,7 +52,7 @@ public class MainMenu extends JFrame {
         panel.add(Box.createRigidArea(new Dimension(50, 50)));
         panel.add(jButtonStartGame);
         panel.add(jButtonSettings);
-        panel.add(jButtonStartGame);
+        panel.add(jButtonExit);
 
         add(panel);
 
