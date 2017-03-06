@@ -14,8 +14,7 @@ public class MainMenu extends JFrame {
         setTitle("Main Menu");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-        setResizable(false);
-        setSize(572, 720);
+        setSize(600, 800);
 
         //Agregar imagen
         JPanel panel = new JPanel();

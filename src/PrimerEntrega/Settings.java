@@ -18,7 +18,7 @@ public class Settings extends JFrame {
         setTitle("Settings");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-        setSize(572 , 720);
+        setSize(150 , 450);
         setResizable(false);
 
         JPanel mainPanel = new JPanel();

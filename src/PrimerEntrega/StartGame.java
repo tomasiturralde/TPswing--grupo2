@@ -13,13 +13,15 @@ public class StartGame extends JFrame{
 
         setTitle("Start Game");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(572 , 720);
-        setResizable(false);
+        setSize(600 , 800);
+        setLocationRelativeTo(null);
+        setVisible(true);
 
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel , BoxLayout.PAGE_AXIS));
 
-        JLabel imageLabel = new JLabel(new ImageIcon("/Users/DiegoMancini/Downloads/Fifa18.png"));
+        Image image = new ImageIcon(this.getClass().getResource("image/Fifa18.png")).getImage();
+        JLabel imageLabel = new JLabel(new ImageIcon(image));
         imageLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
 
         JButton backButton = new JButton("Back");
@@ -27,12 +29,10 @@ public class StartGame extends JFrame{
         backButton.addActionListener(goBack);
 
         panel.add(imageLabel);
-        panel.add(Box.createRigidArea(new Dimension(50 , 50)));
+        panel.add(Box.createRigidArea(new Dimension(25 , 25)));
         panel.add(backButton);
 
         add(panel);
-        pack();
-        setVisible(true);
 
     }
 
