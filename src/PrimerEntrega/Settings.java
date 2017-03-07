@@ -18,8 +18,11 @@ public class Settings extends JFrame {
         setTitle("Settings");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-        setSize(150 , 450);
         setResizable(false);
+        setSize(150 , 450);
+
+        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+        this.setLocation(dim.width/2-this.getSize().width/2, dim.height/2-this.getSize().height/2);
 
         JPanel mainPanel = new JPanel();
         mainPanel.setLayout(new BoxLayout(mainPanel , BoxLayout.PAGE_AXIS));
