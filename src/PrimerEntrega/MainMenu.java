@@ -4,36 +4,40 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
 
+/*
+ * This class is used to create the main menu, which shows different buttons leading to other menus.
+ */
+
 /**
  * Created by DiegoMancini on 6/3/17.
  */
+
+//Class MainMenu extends JFrame so it can use its methods
 public class MainMenu extends JFrame {
 
     public MainMenu(ActionListener startGame, ActionListener settings, ActionListener exit) {
 
+        //Set parameters
         setTitle("Main Menu");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null);
         setResizable(false);
         setSize(600, 800);
 
-        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-        this.setLocation(dim.width/2-this.getSize().width/2, dim.height/2-this.getSize().height/2);
-
+        //Create panel
         JPanel panel = new JPanel();
         panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
 
-        //Titulo del trabajo
+        //Project title
         JLabel title = new JLabel("Trabajo Practico Swing");
         title.setAlignmentX(Component.CENTER_ALIGNMENT);
         title.setFont(new Font(title.getFont().getName(), Font.ROMAN_BASELINE, 19));
 
-        //Nombre de los integrantes
+        //Authors of the project
         JLabel names = new JLabel("Tomas Iturralde y Diego Mancini - Grupo 2");
         names.setAlignmentX(Component.CENTER_ALIGNMENT);
         names.setFont(new Font(names.getFont().getName(), Font.ROMAN_BASELINE, 20));
 
-        //Botones
+        //Buttons
         JButton jButtonStartGame = new JButton("Start Game");
         jButtonStartGame.setAlignmentX(Component.CENTER_ALIGNMENT);
         jButtonStartGame.addActionListener(startGame);
@@ -46,7 +50,7 @@ public class MainMenu extends JFrame {
         jButtonExit.setAlignmentX(Component.CENTER_ALIGNMENT);
         jButtonExit.addActionListener(exit);
 
-        // Creo area para meter los componentes
+        // Create area to include components
         panel.add(Box.createRigidArea(new Dimension(50, 50)));
         panel.add(title);
         panel.add(Box.createRigidArea(new Dimension(50, 50)));
@@ -59,6 +63,7 @@ public class MainMenu extends JFrame {
         add(panel);
 
         pack();
+        setLocationRelativeTo(null);
         setVisible(true);
     }
 }

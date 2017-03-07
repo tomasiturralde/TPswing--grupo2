@@ -4,6 +4,10 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
 
+/*
+ * Displays the settings menu.
+ */
+
 /**
  * Created by DiegoMancini on 6/3/17.
  */

@@ -3,6 +3,10 @@ package PrimerEntrega;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/*
+ * Assigns every button from the main menu with an action, as well as showing where each button leads to.
+ */
+
 /**
  * Created by DiegoMancini on 6/3/17.
  */
